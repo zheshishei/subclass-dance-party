@@ -1,8 +1,10 @@
 var LatinDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node.html('<img class="latin-dancer" src="images/carlton.gif"></img>');
+  this.$node.css({'border' :'none'});
   this.steps = ['F', 'B', 'R', 'F', 'B', 'L'];
   this.currentStep = 0;
-  this.stepSize = 20;
+  this.stepSize = 80;
 };
 LatinDancer.prototype = Object.create(Dancer.prototype);
 LatinDancer.prototype.oldStep = Dancer.prototype.step;
@@ -18,4 +20,7 @@ LatinDancer.prototype.step = function() {
     this.setPosition(this.top, this.left - this.stepSize);
   }
   this.oldStep();
+};
+LatinDancer.prototype.lineUp = function() {
+  this.setPosition(window.innerHeight * Math.random(), window.innerWidth * Math.random());
 };

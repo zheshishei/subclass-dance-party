@@ -4,6 +4,8 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
+  background: url(images/bg.gif) 0 0 no-repeat;
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -31,4 +33,9 @@ body, a:link, a:visited, a:active{
   border: none;
   top: -81px;
   left: -50px;
+}
+
+.latin-dancer {
+  position:absolute;
+  border: none;
 }

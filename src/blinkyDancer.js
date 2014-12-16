@@ -13,3 +13,9 @@ BlinkyDancer.prototype.step = function(){
   // other effects you can use on a jQuery-wrapped html tag.
   this.$node.toggle();
 };
+BlinkyDancer.prototype.lineUp = function() {
+  var rgb = 'rgb(' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) + ')';
+  this.$node.css({'border-color' : rgb});
+};
