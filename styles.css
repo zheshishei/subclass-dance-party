@@ -38,4 +38,7 @@ body, a:link, a:visited, a:active{
 .latin-dancer {
   position:absolute;
   border: none;
+  transition-property: top, left;
+  transition-duration: 1s, 1s;
+  transition-timing: ease;
 }

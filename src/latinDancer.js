@@ -1,6 +1,7 @@
 var LatinDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   this.$node.html('<img class="latin-dancer" src="images/carlton.gif"></img>');
+  this.$node.addClass('latin-dancer');
   this.$node.css({'border' :'none'});
   this.steps = ['F', 'B', 'R', 'F', 'B', 'L'];
   this.currentStep = 0;

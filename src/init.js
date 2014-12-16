@@ -36,5 +36,16 @@ $(document).ready(function(){
       window.dancers[i].lineUp();
     }
   });
+
+  $(".explosion").on("click", function() {
+    if ($(".explosion").text() === "Implode") {
+      $(".dancer").trigger("implode");
+      $(".explosion>a").text("Explode");
+    } else if ($(".explosion").text() === "Explode") {
+      $(".dancer").trigger("explode");
+      $(".explosion>a").text("Implode");
+    }
+
+  });
 });
 
