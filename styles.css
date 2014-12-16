@@ -25,3 +25,10 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.spinny-dancer {
+  position:absolute;
+  border: none;
+  top: -81px;
+  left: -50px;
+}
