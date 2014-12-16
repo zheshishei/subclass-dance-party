@@ -45,7 +45,11 @@ $(document).ready(function(){
       $(".dancer").trigger("explode");
       $(".explosion>a").text("Implode");
     }
-
   });
+
+  congaBeatEmitter = new CongaBeat(500);
+
 });
+
+
 
