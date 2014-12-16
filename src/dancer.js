@@ -4,14 +4,14 @@ var Dancer = function(top, left, timeBetweenSteps){
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
-
-
+  Dancer.prototype.step.call(this);
+  Dancer.prototype.setPosition.call(this, top, left);
 };
 
 Dancer.prototype.step = function(){
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
-  setTimeout(this.step.bind(this), this.timeBetweenSteps);
+  setTimeout(Dancer.prototype.step.bind(this), this.timeBetweenSteps);
 };
 //dancer.step();
 
