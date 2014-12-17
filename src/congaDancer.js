@@ -83,8 +83,8 @@ CongaDancer.prototype.step4 = function() {
     } else {
       this.direction += 90;
     }
+    this.sideStep *= -1;
   }.bind(this), congaBeatEmitter.timeBetweenSteps / 4);
-  this.sideStep *= -1;
 };
 
 CongaDancer.prototype.lookup = function() {

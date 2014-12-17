@@ -48,7 +48,7 @@ $(document).ready(function(){
     }
   });
 
-  congaBeatEmitter = new CongaBeat(500);
+  congaBeatEmitter = new CongaBeat(1930 / 4);
 
 });
 
