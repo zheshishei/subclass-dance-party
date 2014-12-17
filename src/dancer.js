@@ -38,8 +38,6 @@ Dancer.prototype.implode = function() {
 };
 
 Dancer.prototype.explode = function() {
-  console.log(this.canExplode);
-
   if (this.canExplode) {
     var left = Math.round(Math.random() * window.innerWidth / 2) - 100;
     var top = Math.round(Math.random() * window.innerHeight / 2) - 100;
@@ -51,7 +49,6 @@ Dancer.prototype.explode = function() {
       top *= -1;
     }
 
-    console.log('top:' + top + '|left:' + left );
     var trans = this.$node.css('transition');
     this.$node.css({'transition' : 'all .2s cubic-bezier(0.0, 0.0, 0.6, 1.0)'});
     this.setPosition(this.top + top, this.left + left);
@@ -63,6 +60,7 @@ Dancer.prototype.explode = function() {
 
 };
 
+Dancer.prototype.lineUp = function() {};
 // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
 // this one sets the position to some random default point within the body
 //dancer.setPosition(top, left);

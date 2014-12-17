@@ -32,6 +32,7 @@ $(document).ready(function(){
   });
 
   $(".lineUp").on("click", function() {
+    console.log('line up');
     for (var i = 0; i < window.dancers.length; i++) {
       window.dancers[i].lineUp();
     }
